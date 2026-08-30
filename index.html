@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>NP Travels | Easy days out from Kalutara</title>
+  <meta name="description" content="Vehicles, local guides, and easy days out from Kalutara, Sri Lanka. Plan a thoughtful island day with NP Travels." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="NP Travels | Easy days out from Kalutara" />
+  <meta property="og:description" content="Vehicles, local guides, and easy days out from Kalutara, Sri Lanka." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NP Travels | Easy days out from Kalutara" />
+  <meta name="twitter:description" content="Vehicles, local guides, and easy days out from Kalutara, Sri Lanka." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="site-shell">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-row">
+      <button class="logo-btn" id="logo-btn" data-testid="button-logo">
+        <span class="logo-badge">
+          <span class="logo-text">np</span>
+          <span class="logo-dot"></span>
+        </span>
+        <span class="logo-caption">
+          <strong>NP TRAVELS</strong>
+          <small>Kalutara, Sri Lanka</small>
+        </span>
+      </button>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#vehicles" data-testid="link-nav-vehicles">Vehicles</a>
+        <a href="#attractions" data-testid="link-nav-attractions">Attractions</a>
+        <a href="#how-it-works" data-testid="link-nav-how-it-works">How it works</a>
+        <a href="#payment" data-testid="link-nav-payment">Payment</a>
+        <a href="#contact" class="nav-cta" data-testid="link-nav-contact">Let&rsquo;s talk</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" data-testid="button-mobile-menu">
+        <svg id="icon-menu" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        <svg id="icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#vehicles" data-testid="link-mobile-vehicles">Vehicles</a>
+      <a href="#attractions" data-testid="link-mobile-attractions">Attractions</a>
+      <a href="#how-it-works" data-testid="link-mobile-how-it-works">How it works</a>
+      <a href="#payment" data-testid="link-mobile-payment">Payment</a>
+      <a href="#contact" class="mobile-cta" data-testid="link-mobile-contact">Let&rsquo;s talk</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero-image hero">
+    <div class="hero-dots" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="reveal hero-copy">
+        <p class="eyebrow-line"><span class="eyebrow-rule"></span> LOCAL HOSTS. OPEN ROADS.</p>
+        <h1 class="hero-title">Go gently.<br><em>See more.</em></h1>
+        <p class="reveal reveal-delay-1 hero-sub">Vehicles, local guides, and easy days out from Kalutara. We&rsquo;ll take care of the getting there, so you can stay present for the island.</p>
+        <div class="reveal reveal-delay-2 hero-actions">
+          <button class="btn btn-gold" id="btn-hero-estimate" data-testid="button-hero-estimate">
+            Plan your day
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </button>
+          <a href="#" id="link-hero-whatsapp" target="_blank" rel="noreferrer" class="btn btn-outline-light" data-testid="link-hero-whatsapp">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp us
+          </a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-3 hero-note">
+        <p class="eyebrow-line small">A note from Kalutara</p>
+        <p class="hero-quote">&ldquo;The best plan is a little room for the day to surprise you.&rdquo;</p>
+        <div class="hero-signature"><span class="avatar-chip">NP</span> Your local team, since 2016</div>
+      </div>
+    </div>
+    <button class="scroll-hint" id="btn-scroll-intro" data-testid="button-scroll-intro">
+      Scroll to wander
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </section>
+
+  <!-- Why -->
+  <section id="why" class="section why-section">
+    <div class="watermark" aria-hidden="true"></div>
+    <div class="wrap why-grid">
+      <div class="section-heading">
+        <p class="eyebrow">The NP way</p>
+        <h2 class="heading-title">The island feels easier with someone who knows it.</h2>
+        <p class="heading-copy">We&rsquo;re a small Kalutara team, which means your trip never gets passed from inbox to inbox. Expect a real person, a considered route, and a warm welcome at the other end.</p>
+      </div>
+      <div class="why-list">
+        <div class="why-row" data-testid="why-01">
+          <span class="index-num">01</span>
+          <div>
+            <svg class="why-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <h3>Based in Kalutara</h3>
+            <p>We know the small roads, quiet swims, and the best time to arrive.</p>
+          </div>
+        </div>
+        <div class="why-row" data-testid="why-02">
+          <span class="index-num">02</span>
+          <div>
+            <svg class="why-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h3>People, not packages</h3>
+            <p>Friendly local guides who listen first and shape the day around you.</p>
+          </div>
+        </div>
+        <div class="why-row" data-testid="why-03">
+          <span class="index-num">03</span>
+          <div>
+            <svg class="why-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h3>Clear from the start</h3>
+            <p>Simple estimates, sensible vehicles, and no surprises tucked in the fine print.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vehicles -->
+  <section id="vehicles" class="section vehicles-section">
+    <div class="wrap">
+      <div class="section-row">
+        <div class="section-heading">
+          <p class="eyebrow">Choose your wheels</p>
+          <h2 class="heading-title">The right ride changes the rhythm.</h2>
+          <p class="heading-copy">From tuk tuk rambles to cool, comfortable family days &mdash; pick what fits your pace.</p>
+        </div>
+        <a href="#calculator" class="link-arrow" data-testid="link-vehicles-calculator">
+          See an estimate
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+
+      <div class="vehicle-grid" id="vehicle-grid"></div>
+
+      <p class="vehicle-note">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 4.5L18 9l-4.1 1.5L12 15l-1.9-4.5L6 9l4.1-1.5L12 3z"/></svg>
+        Every vehicle comes with a careful driver. Guides can be added when you want the stories too.
+      </p>
+    </div>
+  </section>
+
+  <!-- Attractions -->
+  <section id="attractions" class="section attractions-section">
+    <div class="wrap">
+      <div class="section-row align-end">
+        <div class="section-heading light">
+          <p class="eyebrow">Close to home</p>
+          <h2 class="heading-title">A few places worth taking the long way to.</h2>
+          <p class="heading-copy">Kalutara is not a stopover. It&rsquo;s a soft landing into the island &mdash; rivers, gardens, and green trails within an easy drive.</p>
+        </div>
+        <div class="filter-group" role="group" aria-label="Filter attractions" id="filter-group">
+          <button class="filter-btn active" data-filter="All" data-testid="button-filter-all">All</button>
+          <button class="filter-btn" data-filter="Water" data-testid="button-filter-water">Water</button>
+          <button class="filter-btn" data-filter="Wild" data-testid="button-filter-wild">Wild</button>
+          <button class="filter-btn" data-filter="Culture" data-testid="button-filter-culture">Culture</button>
+        </div>
+      </div>
+
+      <div class="attraction-grid" id="attraction-grid"></div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section id="calculator" class="section calculator-section">
+    <div class="wrap calculator-grid">
+      <div class="section-heading">
+        <p class="eyebrow">Make it yours</p>
+        <h2 class="heading-title">A useful number to start with.</h2>
+        <p class="heading-copy">Choose your wheels and a few essentials. This is a friendly estimate, not a locked quote &mdash; we&rsquo;ll confirm the final details with you.</p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-card-head">
+          <div>
+            <p class="mono-label">Your estimate</p>
+            <p class="calc-sub">Adjust anytime</p>
+          </div>
+          <div class="calc-icon">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+          </div>
+        </div>
+
+        <fieldset class="calc-block">
+          <legend>Vehicle</legend>
+          <div class="calc-vehicle-grid" id="calc-vehicle-grid"></div>
+        </fieldset>
+
+        <div class="calc-block">
+          <label for="group-size" class="calc-row-label">
+            <span>Group size</span>
+            <span class="mono-value" id="group-size-value">2 travelers</span>
+          </label>
+          <div class="slider-row">
+            <button class="round-btn" id="group-dec" aria-label="Decrease group size" data-testid="button-decrease-group-size">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <input id="group-size" type="range" min="1" max="12" value="2" data-testid="input-group-size" />
+            <button class="round-btn" id="group-inc" aria-label="Increase group size" data-testid="button-increase-group-size">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+          <p class="calc-hint" id="group-hint">Includes 2 travelers. Extra travelers add LKR&nbsp;1,500 per day each.</p>
+        </div>
+
+        <div class="calc-block">
+          <label for="trip-days" class="calc-row-label">
+            <span>Days on the road</span>
+            <span class="mono-value" id="days-value">3 days</span>
+          </label>
+          <div class="slider-row">
+            <button class="round-btn" id="days-dec" aria-label="Decrease days" data-testid="button-decrease-days">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <input id="trip-days" type="range" min="1" max="14" value="3" data-testid="input-trip-days" />
+            <button class="round-btn" id="days-inc" aria-label="Increase days" data-testid="button-increase-days">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="calc-toggles">
+          <label class="toggle-row">
+            <span class="toggle-left">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              <span>
+                <span class="toggle-title">Add a local guide</span>
+                <span class="toggle-sub">Stories, stops, and a little context</span>
+              </span>
+            </span>
+            <input type="checkbox" id="input-add-guide" checked data-testid="input-add-guide" />
+          </label>
+          <label class="toggle-row">
+            <span class="toggle-left">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17H3v-6l2-5h13l2 5v6h-2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>
+              <span>
+                <span class="toggle-title">Airport pickup</span>
+                <span class="toggle-sub">Start easy, from Bandaranaike</span>
+              </span>
+            </span>
+            <input type="checkbox" id="input-airport-pickup" data-testid="input-airport-pickup" />
+          </label>
+        </div>
+
+        <div class="calc-summary">
+          <div class="summary-lines" id="summary-lines"></div>
+          <div class="summary-total-row">
+            <div>
+              <p class="summary-caption" id="summary-caption">Comfort Car &middot; 2 travelers &middot; 3 days</p>
+              <p class="summary-total" id="text-estimate-total" data-testid="text-estimate-total">LKR 0</p>
+            </div>
+            <button class="btn btn-dark" id="button-send-estimate" data-testid="button-send-estimate">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              Ask about this
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works" class="section how-section">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow">No complicated booking flow</p>
+        <h2 class="heading-title">Three steps. Then you&rsquo;re on your way.</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-item" data-testid="step-how-it-works-1">
+          <span class="index-num">01</span>
+          <h3>Tell us your kind of day</h3>
+          <p>Share your dates, group size, and the places you have in mind. A WhatsApp message is perfect.</p>
+          <svg class="step-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </div>
+        <div class="step-item" data-testid="step-how-it-works-2">
+          <span class="index-num">02</span>
+          <h3>We shape the route</h3>
+          <p>We pair you with the right wheels and a local host who knows when to slow down.</p>
+          <svg class="step-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </div>
+        <div class="step-item" data-testid="step-how-it-works-3">
+          <span class="index-num">03</span>
+          <h3>Arrive, exhale, explore</h3>
+          <p>Your driver meets you where you are. From there, the island does the talking.</p>
+        </div>
+      </div>
+
+      <div class="how-cta">
+        <div class="how-cta-left">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <h3>Questions are welcome.</h3>
+            <p>Usually online from 08:00&ndash;20:00 Sri Lanka time. If we&rsquo;re driving, we&rsquo;ll reply when we pull over.</p>
+          </div>
+        </div>
+        <a href="#" id="link-how-whatsapp" target="_blank" rel="noreferrer" class="btn btn-outline-dark" data-testid="link-how-whatsapp">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Start a chat
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment -->
+  <section id="payment" class="section payment-section">
+    <div class="wrap payment-grid">
+      <div>
+        <div class="section-heading">
+          <p class="eyebrow">Payment, plainly</p>
+          <h2 class="heading-title">A simple deposit holds your day.</h2>
+          <p class="heading-copy">Once we confirm your route, we&rsquo;ll share the final price and ask for a small deposit. The balance is settled at the end of your trip.</p>
+        </div>
+        <div class="payment-checks">
+          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Cash in LKR</span>
+          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Bank transfer</span>
+          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> No card surcharge</span>
+        </div>
+      </div>
+
+      <div class="bank-card">
+        <div class="bank-ring" aria-hidden="true"></div>
+        <p class="mono-label relative">Bank transfer details</p>
+        <div class="bank-details">
+          <div><span class="bank-label">Bank</span><strong>Commercial Bank &mdash; Kalutara branch</strong></div>
+          <div><span class="bank-label">Account name</span><strong>NP Travels (placeholder)</strong></div>
+          <div class="bank-account-row">
+            <div><span class="bank-label">Account number</span><strong class="mono-value" id="bank-account-number">0000 0000 0000</strong></div>
+            <button class="copy-btn" id="button-copy-account" data-testid="button-copy-account">
+              <svg id="icon-copy" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <svg id="icon-check" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
+              <span id="copy-label">Copy</span>
+            </button>
+          </div>
+          <div><span class="bank-label">Branch code</span><strong>7056 (placeholder)</strong></div>
+        </div>
+        <p class="bank-disclaimer"><strong>Placeholder details:</strong> Please do not transfer until NP Travels confirms the account and your booking in writing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="section-heading light on-accent">
+          <p class="eyebrow accent-eyebrow">Let&rsquo;s make a day of it</p>
+          <h2 class="heading-title">Tell us what sounds good.</h2>
+          <p class="heading-copy">Beach before breakfast? A waterfall after lunch? Send a note and a real person from Kalutara will get back to you.</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://wa.me/94771234567" target="_blank" rel="noreferrer" data-testid="link-contact-whatsapp">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp &middot; +94 77 123 4567
+          </a>
+          <a href="mailto:hello@nptravels.lk" data-testid="link-contact-email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg>
+            hello@nptravels.lk
+          </a>
+          <span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Kalutara, Western Province
+          </span>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div id="contact-success" class="contact-success" hidden>
+          <span class="success-badge">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <h3>We&rsquo;ve got your note.</h3>
+          <p>Thanks for reaching out. The NP team will reply with a warm hello and a few useful ideas soon.</p>
+          <button id="button-send-another" data-testid="button-send-another">Send another note</button>
+        </div>
+
+        <form id="contact-form" class="contact-form" aria-label="Contact form">
+          <div class="form-row-2">
+            <label>Your name
+              <input required name="name" type="text" placeholder="What should we call you?" data-testid="input-contact-name" />
+            </label>
+            <label>Email address
+              <input required name="email" type="email" placeholder="you@example.com" data-testid="input-contact-email" />
+            </label>
+          </div>
+          <label class="full">How can we help?
+            <textarea required name="message" rows="5" placeholder="We&rsquo;ll be in Kalutara for..." data-testid="input-contact-message"></textarea>
+          </label>
+          <button type="submit" class="btn btn-dark full-btn" data-testid="button-submit-contact">
+            Send to the NP team
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </button>
+          <p class="form-footnote">No mailing list. No auto-replies. Just a considered answer.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div>
+        <button id="footer-logo" class="footer-logo" data-testid="button-footer-logo">np travels</button>
+        <p class="footer-tag">Good days, made easy from Kalutara.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#vehicles" data-testid="link-footer-vehicles">Vehicles</a>
+        <a href="#attractions" data-testid="link-footer-attractions">Attractions</a>
+        <a href="#contact" data-testid="link-footer-contact">Contact</a>
+        <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" data-testid="link-footer-instagram">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook" data-testid="link-footer-facebook">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>NP Travels &middot; Kalutara, Sri Lanka</span>
+      <span>Prices are estimates and require office confirmation.</span>
+    </div>
+  </footer>
+
+</main>
+
+<script src="prices.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
